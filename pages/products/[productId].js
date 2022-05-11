@@ -27,8 +27,8 @@ const Product = () => {
   }
   
   const handleAddingToCart = (product) => {
-    const prevCart = JSON.parse(localstorage.getItem('cart'))
-    const newCart = [...prevCart, product]
+    const prevCart = JSON.parse(localstorage.getItem('cart'), '[]')
+    const newCart = prevCart.append(newCart)
     localstorage.setItem('cart', JSON.stringify(newCart))
     router.push('/cart')
   }
