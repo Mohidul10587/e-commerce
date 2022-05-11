@@ -1,0 +1,73 @@
+[
+
+    {
+        "id":0,
+        "name":"Samsung 123",
+        "price":45,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://image.shutterstock.com/image-illustration/headphones-isolated-on-grey-background-260nw-1797135160.jpg"
+    
+    
+    },
+    {
+
+        "id":1,
+        "name":"vivo v54",
+        "price":12,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://png.pngtree.com/png-clipart/20201129/ourmid/pngtree-headphones-png-image_2452681.jpg"
+    },
+    {
+        "id":2,
+        "name":"Xtreem pro",
+        "price":125,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztLypBbufpfk44mGqvkkoKxqxevOO9YT6dg&usqp=CAU"
+    },
+    {
+        "id":3,
+        "name":"Honor-AF15-Pro",
+        "price":345,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://www.penguin.com.bd/wp-content/uploads/2020/12/Honor-AF15-Pro-Tripod-Selfie-Stick-2-300x300.jpg"
+    },
+    {
+        "id":4,
+        "name":"Selfiesticks-noapp",
+        "price":15,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://freshnrebel.com/media/7b/4d/46/1628256691/selfiesticks-noapp.jpg"
+    },
+    {
+        "id":5,
+        "name":"Xiaomi-Stick",
+        "price":98,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://www.mytrendyphone.eu/images/Xiaomi-Mi-Selfie-Stick-Tripod-with-Bluetooth-Remote-Black-6934177700798-11012019-01-p.jpg"
+    },
+    {
+        "id":6,
+        "name":"Altra max-2",
+        "price":78,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://static5.depositphotos.com/1004915/411/i/600/depositphotos_4119570-stock-photo-cell-phone-charger.jpg"
+    },
+    {
+        "id":7,
+        "name":"Nokia x3",
+        "price":145,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://dhrubokallrounder.com/wp-content/uploads/2020/07/laptop-Charger-2.jpeg"
+    },
+    {
+        "id":8,
+        "name":"Samsung m.3",
+        "price":345,
+        "details":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nesciunt numquam voluptas, aspernatur id voluptatum doloribus quisquam voluptate, neque deleniti accusamus nulla dolore impedit repellendus accusantium temporibus sequi sit non!",
+        "img":"https://www.androidauthority.com/wp-content/uploads/2018/07/Smartphone-Chargers.jpg"
+    }
+    
+    
+    
+    
+    ]
