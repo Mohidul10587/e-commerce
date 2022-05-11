@@ -8,6 +8,7 @@ const Product = () => {
   const [products, setProducts] = useState([])
   const router = useRouter()
   const { productId } = router.query
+  const history = useHistory()
 
   useEffect(() => {
     fetch('../fakeData.json')
@@ -24,6 +25,13 @@ const Product = () => {
     img: products[productId].img
     
   }
+  
+  const handleAddingToCart = (product) => {
+    const prevCart = JSON.parse(localstorage.getItem('cart'))
+    const newCart = [...prevCart, product]
+    localstorage.setItem('cart', JSON.stringify(newCart))
+    router.push('/cart')
+  }
 
   return (
     <div className='mx-5 text-center'>
@@ -31,11 +39,7 @@ const Product = () => {
       <p>{products[productId].name}</p>
       <p>{products[productId].price}</p>
       <p>{products[productId].details}</p>
-      <button className='border border-black px-2 rounded-sm mr-2'> 
-      <Link href={{pathname: "/cart",query: detailsForCart,}}> 
-      <a> Add to cart </a> 
-      </Link></button>
-
+      <button className='border border-black px-2 rounded-sm mr-2' onClick={() => handleAddingToCart(detailsForCart)}>Add to cart</button>
       <button className='border border-black px-2 rounded-sm'><Link href='/'><a href="">Continue Shopping</a></Link></button>
     </div>
   )
