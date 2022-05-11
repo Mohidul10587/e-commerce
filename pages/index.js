@@ -26,8 +26,6 @@ const Home = () => {
     products.map(product=><Product key={product.id} product={product}></Product>)
   }
 </div>
-
-
     </div>
   )
 }
@@ -37,11 +35,9 @@ const Product =(props)=>{
 
   return(
     <div className='border border-black m-3 text-center p-3'>
-       
         <Image src={props.product.img} width={400} height={400} alt='this is a img' ></Image>
         <p>{props.product.name}</p>
         <button className='border border-black px-2 rounded-sm'><Link  href={`/products/${props.product.id}`}><a href="">Show Details</a></Link></button>
-       
     </div>
   )
 }
