@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 export default function SomePage() {
   const router = useRouter();
-  const productObj = router.query;
+  const productObj = JSON.parse(localStorage.getItem('cart'))
 
   // const cart_items = JSON.parse(localStorage.getItem('cart-items'))
 
@@ -26,21 +26,24 @@ export default function SomePage() {
       <h1 className="text-center text-3xl">Cart</h1>
       <h1 className="text-center text-3xl">-------------</h1>
 
-
-      <div className="flex justify-evenly items-center">
-        <p><Image src={productObj.img} width='70' height='70' alt='This is a img'></Image></p>
-        <p className="text-2xl font-bold">{productObj.name}</p>
-        <p className="text-2xl font-bold">{productObj.price}</p>
-      </div>
-
-
+    {
+      productObj.map(item => {
+        return (
+          <div className="flex justify-evenly items-center">
+            <p><Image src={item.img} width='70' height='70' alt='This is a img'></Image></p>
+            <p className="text-2xl font-bold">{item.name}</p>
+            <p className="text-2xl font-bold">{item.price}</p>
+          </div>
+        )
+      })
+    }
       <div className="text-center mt-24">
-        <button className='border border-black px-2 rounded-sm '><Link href='/'><a href="">Continue Shopping</a></Link></button>
-
+        <button className='border border-black px-2 rounded-sm '>
+          <Link href='/'>
+            <a href="">Continue Shopping</a>
+          </Link>
+        </button>
       </div>
-
-
-
 
     </div>
   );
