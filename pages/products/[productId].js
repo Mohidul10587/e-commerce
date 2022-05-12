@@ -8,13 +8,13 @@ const Product = () => {
   const [products, setProducts] = useState([])
   const router = useRouter()
   const { productId } = router.query
-  const history = useHistory()
 
   useEffect(() => {
     fetch('../fakeData.json')
       .then(res => res.json())
       .then(data => setProducts(data))
   }, [])
+  
   if (products.length == 0) {
     return
   }
@@ -27,8 +27,8 @@ const Product = () => {
   }
   
   const handleAddingToCart = (product) => {
-    const prevCart = JSON.parse(localstorage.getItem('cart'), '[]')
-    const newCart = prevCart.append(newCart)
+    const prevCart = localStorage.getItem('cart') != null ? JSON.parse(localstorage.getItem('cart')) : []
+    const newCart = prevCart.push(product)
     localstorage.setItem('cart', JSON.stringify(newCart))
     router.push('/cart')
   }
